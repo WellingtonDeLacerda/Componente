@@ -1,0 +1,120 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    /* cores */
+    --Laranja: hsl(25, 97%, 53%);
+    --Branco: hsl(0, 0%, 100%);
+    --Cinza-claro: hsl(217, 12%, 63%);
+    --Azul-escuro: hsl(213, 19%, 18%);
+    --Azul-Muito-Escuro: hsl(216, 12%, 8%);
+    --cor:#141b28;
+}
+p{
+    font-size: 14px;
+    padding: 15px 0px;
+    line-height: 23px;
+}
+body{
+    width: 99vw;
+    height: 100vh;
+    background-color: var(--Azul-Muito-Escuro);
+    font-family: arial;
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--Azul-escuro);
+    min-width: 325px;
+    max-width: 335px;
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+section .image1{
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color:var(--cor);
+    
+}
+section h2{
+    color: var(--Branco);
+}
+section p{
+    color: var(--Cinza-claro);
+}
+.links{
+   display: flex;
+   justify-content: space-between;
+}
+.links a{
+    color: black;
+    padding: 13px 18px;
+    background: var(--cor);
+    border-radius: 50%;  
+    color: var(--Cinza-claro);
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 4px #00000048;
+    
+}
+.links a:hover{
+    background: var(--Laranja);
+    color: black;
+}
+section .submit{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--Laranja);
+    color: var(--Azul-Muito-Escuro);
+    border-radius: 20px;
+    margin: 14px 0px;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+section .submit:hover{
+    background: white;
+    color: black;
+}
+.sec1{
+    display: block;
+}
+.sec2{
+    display: none;
+    text-align: center;
+}
+.sec2 .p2{
+    padding: 5px 10px;
+    margin: 20px 0px;
+    border-radius: 20px;
+    background: var(--cor);
+    color: var(--Laranja);
+    display: inline-block;
+}
+@media screen and (min-width:768px){
+    section{
+        height: 400px;
+        min-width: 400px;
+        max-width: 400px;
+        font-size: 1.3em;
+        padding: 30px;
+    }
+    section .image1{
+        margin-bottom: 30px;
+    }
+    .links{
+        margin-bottom: 25px;
+    }
+    .sec2 img{
+        display: block;
+        margin: auto;
+    }
+}
